@@ -2,12 +2,14 @@
 #define PLAYER_H
 
 #include <Person.h>
-
+using namespace std;
 
 class Player : public Person
 {
     public:
-        Player(string nick, int wins, int looses, int cpt_points);
+        Player(string name, string lastname, string country, int age,
+               string nick, int wins, int looses, int cpt_points);
+        //:Person(name,lastname,country, gender,age){};
         virtual ~Player();
 
     protected:
