@@ -1,12 +1,12 @@
-#ifndef PERSONA_H
-#define PERSONA_H
+#ifndef PERSON_H
+#define PERSON_H
 #include <string>
 using namespace std;
 
-class Persona
+class Person
 {
     public:
-        Persona(string name, string lastname,string country, string gender, int age);
+        Person(string name, string lastname,string country, string gender, int age);
         virtual ~Persona();
 
     protected:
@@ -17,4 +17,4 @@ class Persona
 
 };
 
-#endif // PERSONA_H
+#endif // PERSON_H

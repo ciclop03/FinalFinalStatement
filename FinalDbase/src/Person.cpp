@@ -1,7 +1,7 @@
-#include "Persona.h"
+#include "Person.h"
 #include <string>
 
-Persona::Persona(string name,string lastname,string country, string gender, int age){
+Person::Person(string name,string lastname,string country, string gender, int age){
     this->name=name;
     this->lastname=lastname;
     this->country=country;
@@ -9,7 +9,7 @@ Persona::Persona(string name,string lastname,string country, string gender, int 
     this->age=age;
 }
 
-Persona::~Persona()
+Person::~Person()
 {
     //dtor
 }
