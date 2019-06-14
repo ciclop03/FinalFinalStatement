@@ -1,6 +1,6 @@
 #ifndef DYNARRAY_H
 #define DYNARRAY_H
-
+/// USAR INLINE CON TEMPLATES (?)
 template <typename T>
 class DynArray
 {
