@@ -7,6 +7,8 @@ class Person
 {
     public:
         Person(string name, string lastname,string country, char gender, int age);
+        Person();
+
         virtual ~Person();
 
     protected:

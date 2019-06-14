@@ -2,16 +2,22 @@
 1514140574 source:c:\newshift\finalfinalstatement\finaldbase\main.cpp
 	<iostream>
 
-1560296415 source:c:\newshift\finalfinalstatement\finaldbase\src\person.cpp
+1560500015 source:c:\newshift\finalfinalstatement\finaldbase\src\person.cpp
 	"Person.h"
 	<string>
 
-1560498863 c:\newshift\finalfinalstatement\finaldbase\include\person.h
+1560500780 c:\newshift\finalfinalstatement\finaldbase\include\person.h
 	<string>
 
-1560367180 source:c:\newshift\finalfinalstatement\finaldbase\src\player.cpp
+1560500015 source:c:\newshift\finalfinalstatement\finaldbase\src\player.cpp
 	"Player.h"
 
-1560367180 c:\newshift\finalfinalstatement\finaldbase\include\player.h
+1560500015 c:\newshift\finalfinalstatement\finaldbase\include\player.h
+	<Person.h>
+
+1560500674 source:c:\newshift\finalfinalstatement\finaldbase\src\character.cpp
+	"Character.h"
+
+1560500347 c:\newshift\finalfinalstatement\finaldbase\include\character.h
 	<Person.h>
 
