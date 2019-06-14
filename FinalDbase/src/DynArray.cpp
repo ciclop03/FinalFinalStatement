@@ -1,85 +1,73 @@
 #include "DynArray.h"
-
 template <typename T>
-class DynamicArray{
-    T *data;
-    int size;
-    void resize(int newSize) {
-        T *arr = new T[size];
-        int minSize = (newSize > size ? newSize : newSize);
+DynArray::resize_(int newSize) {
+        T **arr = new T*[size_];
+        int minSize = (newSize > size_ ? newSize : newSize);
         for(int i = 0; i < minSize; i++){
             arr[i]=data[i];
         }
         delete[] data;
-        this->size = newSize;
+        this->size_ = newSize;
         data = arr;
     }
-public:
-    DynamicArray() {
-        data = new T[0];
-        this->size = 0;
+template <typename T>
+DynArray::DynArray() {
+        data = new T*[0];
+        this->size_ = 0;
     }
-    DynamicArray(T arr[], int size) {
-        this->data = new T[size];
-        this->size = size;
-        for (int i = 0; i < size; ++i)
-            data[i] = arr[i];
+template <typename T>
+DynArray::DynArray(T arr[], int size_) {
+        this->data = new T*[size_];
+        this->size_ = size_;
+        for (int i = 0; i < size_; ++i)
+            data[i] = arr[i];///es un ptr deberia ser *(data[i]) ........?
     }
-    DynamicArray(DynamicArray <T> &o) {
-        data = new T[o.size];
-        size = o.size;
-        for (int i = 0; i < size; ++i)
-            data[i] = o.data[i];
+template <typename T>
+DynArray::DynArray(DynArray <T> &a) {///estaok?
+        data = new T*[a.size_];
+        size_ = a.size_;
+        for (int i = 0; i < size_; ++i)
+            data[i] = a.data[i];
     }
+template <typename T>
+void DynArray::push_back_(T *val) {
+        resize_(size_ + 1);
+        this->data[size_-1] = val;
+    }
+template <typename T>
+void DynaArray::insert_(const T *val, int pos) {
+        resize_(size_ + 1);
 
-    void push_back(T val) {
-        resize(size + 1);
-        this->data[size-1] = val;
-    }
-
-    void insert(const T val, int pos) {
-        resize(size + 1);
-
-        for( int i = size; i > pos; i--){
-            data[i]= data[i-1];
+        for( int i = size_; i > pos; i--){
+            data[i]=data[i-1];
         }
         data[pos] = val;
     }
 
-    void remove(int pos) {
-        if(pos >= 0 && pos < size) {
-            for(int i=pos; i<size-1; i++)
+void DynArray::remove_(int pos) {
+        if(pos >= 0 && pos < size_) {
+            for(int i=pos; i<size_-1; i++)
             {
                 data[i] = data[i+1];
             }
-            resize(size - 1);
+            resize_(size_ - 1);
         }
     }
 
-    void print(void) {
-        cout << "[";
-        for(int i = 0; i < size; i++){
-            cout << data[i] << " ";
+void DynArray::print(void) {
+        std::cout << "[";
+        for(int i = 0; i < size_; i++){
+            std::cout << data[i] << " ";
         }
-        cout <<"] "<< endl;
+        std::cout <<"] "<< std::endl;
     }
 
-    int getSize() {
-        return size;
+int DynArray::getSize() {
+        return size_;
     }
 
-    ~DynamicArray() {
+    DynArray::~DynamicArray() {
         delete[] data;
     }
-};
-int main() {
 
-DynArray::DynArray()
-{
-    //ctor
-}
 
-DynArray::~DynArray()
-{
-    //dtor
-}

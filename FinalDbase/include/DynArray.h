@@ -1,16 +1,26 @@
 #ifndef DYNARRAY_H
 #define DYNARRAY_H
 
-
+template <typename T>
 class DynArray
 {
-    public:
+public:
         DynArray();
+        DynArray(T arr[], int size_);
+        DynArray(DynArray <T> &a);
+        void push_back_(T *val);
+        void insert_(const T *val, int pos);
+        void remove_(int pos);
+        void print(void);
+        int getSize;
         ~DynArray();
 
-    protected:
+protected:
 
-    private:
+private:
+    T **data;
+    int size_;
+    void resize_(int newSize);
 
 };
 

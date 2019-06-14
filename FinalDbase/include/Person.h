@@ -1,18 +1,18 @@
 #ifndef PERSON_H
 #define PERSON_H
 #include <string>
-using namespace std;
+
 
 class Person
 {
     public:
-        Person(string name, string lastname,string country, char gender, int age);
+        Person(std::string name, std::string lastname,std::string country, char gender, int age);
         Person();
 
         virtual ~Person();
 
     protected:
-        string name, lastname,country;
+        std::string name, lastname,country;
         char gender;
         int age;
 
