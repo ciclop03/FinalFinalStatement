@@ -6,6 +6,12 @@
 	"Person.h"
 	<string>
 
-1560354472 c:\newshift\finalfinalstatement\finaldbase\include\person.h
+1560498863 c:\newshift\finalfinalstatement\finaldbase\include\person.h
 	<string>
+
+1560367180 source:c:\newshift\finalfinalstatement\finaldbase\src\player.cpp
+	"Player.h"
+
+1560367180 c:\newshift\finalfinalstatement\finaldbase\include\player.h
+	<Person.h>
 

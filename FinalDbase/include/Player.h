@@ -7,8 +7,8 @@ using namespace std;
 class Player : public Person
 {
     public:
-        Player(string name, string lastname, string country, int age,
-               string nick, int wins, int looses, int cpt_points);
+        Player(string name, string lastname, string country, char gender, int age,
+               string nick, int wins, int looses,int top8s, int cpt_points);
         //:Person(name,lastname,country, gender,age){};
         virtual ~Player();
 

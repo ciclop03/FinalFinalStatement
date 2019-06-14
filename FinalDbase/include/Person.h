@@ -6,11 +6,12 @@ using namespace std;
 class Person
 {
     public:
-        Person(string name, string lastname,string country, string gender, int age);
+        Person(string name, string lastname,string country, char gender, int age);
         virtual ~Person();
 
     protected:
-        string name, lastname,country, gender;
+        string name, lastname,country;
+        char gender;
         int age;
 
     private:
