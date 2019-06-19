@@ -6,8 +6,9 @@
 	"Person.h"
 	<string>
 
-1560509453 c:\newshift\finalfinalstatement\finaldbase\include\person.h
+1560946366 c:\newshift\finalfinalstatement\finaldbase\include\person.h
 	<string>
+	<iostream>
 
 1560500015 source:c:\newshift\finalfinalstatement\finaldbase\src\player.cpp
 	"Player.h"

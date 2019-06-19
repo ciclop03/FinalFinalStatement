@@ -1,10 +1,12 @@
 #ifndef DYNARRAY_H
 #define DYNARRAY_H
 /// USAR INLINE CON TEMPLATES (?)
+
 template <typename T>
 class DynArray
 {
 public:
+
         DynArray();
         DynArray(T arr[], int size_);
         DynArray(DynArray <T> &a);

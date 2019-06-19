@@ -1,5 +1,5 @@
 #include "DynArray.h"
-
+#include <iostream>
 
 template <typename T>
 void DynArray<T>::resize_(int newSize) {
@@ -55,9 +55,9 @@ void DynaArray<T>::insert_(const T *val, int pos) {
         }
         data[pos] = val;
 }
+#include "DynArray.h"
 
-
-
+template <typename T>
 void DynArray<T>::remove_(int pos) {
         if(pos >= 0 && pos < size_) {
             for(int i=pos; i<size_-1; i++)
@@ -67,7 +67,7 @@ void DynArray<T>::remove_(int pos) {
             resize_(size_ - 1);
         }
 }
-
+template <typename T>
 void DynArray<T>::print(void) {
         std::cout << "[";
         for(int i = 0; i < size_; i++){
@@ -75,11 +75,11 @@ void DynArray<T>::print(void) {
         }
         std::cout <<"] "<< std::endl;
 }
-
+template <typename T>
 int DynArray<T>::getSize() {
         return size_;
 }
-
+template <typename T>
 DynArray<T>::~DynamicArray() {
         delete[] data;
     }
