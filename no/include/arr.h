@@ -1,11 +1,16 @@
 #ifndef ARR_H
 #define ARR_H
 
+
 template <typename T>
 class arr
 {
     public:
-        arr();
+        arr(){
+            siz=0;
+
+        };
+
         virtual ~arr();
         sor_qck();
         sor_cou();

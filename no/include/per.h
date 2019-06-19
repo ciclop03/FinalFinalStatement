@@ -5,6 +5,7 @@
 class per
 {
     public:
+        std::string a;
         per();
         virtual ~per();
 
