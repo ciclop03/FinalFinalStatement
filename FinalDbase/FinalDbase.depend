@@ -10,10 +10,12 @@
 	<string>
 	<iostream>
 
-1560500015 source:c:\newshift\finalfinalstatement\finaldbase\src\player.cpp
+1560946416 source:c:\newshift\finalfinalstatement\finaldbase\src\player.cpp
 	"Player.h"
+	<iostream>
 
-1560500015 c:\newshift\finalfinalstatement\finaldbase\include\player.h
+1561020727 c:\newshift\finalfinalstatement\finaldbase\include\player.h
+	<iostream>
 	<Person.h>
 
 1560500674 source:c:\newshift\finalfinalstatement\finaldbase\src\character.cpp
@@ -21,4 +23,11 @@
 
 1560500347 c:\newshift\finalfinalstatement\finaldbase\include\character.h
 	<Person.h>
+
+1561020447 source:c:\newshift\finalfinalstatement\finaldbase\src\dynarray.cpp
+	"DynArray.h"
+	<iostream>
+	"DynArray.h"
+
+1561020385 c:\newshift\finalfinalstatement\finaldbase\include\dynarray.h
 

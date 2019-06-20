@@ -1,7 +1,8 @@
 #include "Person.h"
 #include <string>
 #include <iostream>
-Person::Person(std::string name,std::string lastname,string country, char gender, int age)
+
+Person::Person(std::string name,std::string lastname,std::string country, char gender, int age)
 {
     this->name=name;
     this->lastname=lastname;

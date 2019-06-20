@@ -1,6 +1,6 @@
 #include "DynArray.h"
 #include <iostream>
-
+/*
 template <typename T>
 void DynArray<T>::resize_(int newSize) {
         T **arr = new T*[size_];
@@ -84,4 +84,4 @@ DynArray<T>::~DynamicArray() {
         delete[] data;
     }
 
-
+*/

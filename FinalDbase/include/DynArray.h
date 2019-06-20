@@ -2,28 +2,44 @@
 #define DYNARRAY_H
 /// USAR INLINE CON TEMPLATES (?)
 
+
 template <typename T>
-class DynArray
+class arr
 {
-public:
+    public:
+        arr(){
+            siz=0;
 
-        DynArray();
-        DynArray(T arr[], int size_);
-        DynArray(DynArray <T> &a);
-        void push_back_(T *val);
-        void insert_(const T *val, int pos);
-        void remove_(int pos);
-        void print(void);
-        int getSize;
-        ~DynArray();
+        };
 
-protected:
+        virtual ~arr();
+        sor_qck();
+        sor_cou();
+        ins_end(T a);
+        ins(T a, int pos);
+        del(int pos);
+    protected:
 
-private:
-    T **data;
-    int size_;
-    void resize_(int newSize);
+    private:
+        T**dat;
+        int siz;
+        re_siz(int new_siz){
+            T **e_dat = new T* [new_siz];
+            int min_siz=(new_siz > siz)?siz:new_siz;
+            for(int i=0;i<min_siz;i++){
+                e_dat[i]=this->dat[i];
+            }
+        this->siz=new_siz;
+        delete[] this->dat;
+        dat=e_dat;
+
+        }
+
+
+
+
 
 };
+
 
 #endif // DYNARRAY_H

@@ -13,6 +13,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="include" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -22,6 +23,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -32,7 +34,17 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/arr.h" />
+		<Unit filename="include/com.h" />
+		<Unit filename="include/pc.h" />
+		<Unit filename="include/per.h" />
+		<Unit filename="include/pla.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/arr.cpp" />
+		<Unit filename="src/com.cpp" />
+		<Unit filename="src/pc.cpp" />
+		<Unit filename="src/per.cpp" />
+		<Unit filename="src/pla.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
