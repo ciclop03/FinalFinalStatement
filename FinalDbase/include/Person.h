@@ -9,6 +9,7 @@ class Person
         Person(std::string name, std::string lastname,std::string country, char gender, int age);
         Person();
 
+
         virtual ~Person();
 
     protected:

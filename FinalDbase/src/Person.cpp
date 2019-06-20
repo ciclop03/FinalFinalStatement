@@ -10,6 +10,8 @@ Person::Person(std::string name,std::string lastname,std::string country, char g
     this->gender=gender;
     this->age=age;
 }
+
+
 Person::Person()
 {
             name = "N/A";

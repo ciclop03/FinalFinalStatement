@@ -4,7 +4,7 @@
 #include <Person.h>
 
 
-class Player : public Person
+class Player : virtual public Person
 {
     public:
         Player(std::string name, std::string lastname, std::string country, char gender, int age,

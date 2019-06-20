@@ -1,3 +1,5 @@
+///ESTO QUEDA VACÍO POR EL TEMPLATE
+
 #include "DynArray.h"
 #include <iostream>
 /*

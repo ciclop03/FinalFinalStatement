@@ -2,11 +2,12 @@
 1514140574 source:c:\newshift\finalfinalstatement\finaldbase\main.cpp
 	<iostream>
 
-1560509453 source:c:\newshift\finalfinalstatement\finaldbase\src\person.cpp
+1561020771 source:c:\newshift\finalfinalstatement\finaldbase\src\person.cpp
 	"Person.h"
 	<string>
+	<iostream>
 
-1560946366 c:\newshift\finalfinalstatement\finaldbase\include\person.h
+1561022527 c:\newshift\finalfinalstatement\finaldbase\include\person.h
 	<string>
 	<iostream>
 
@@ -14,7 +15,7 @@
 	"Player.h"
 	<iostream>
 
-1561020727 c:\newshift\finalfinalstatement\finaldbase\include\player.h
+1561022528 c:\newshift\finalfinalstatement\finaldbase\include\player.h
 	<iostream>
 	<Person.h>
 
@@ -24,10 +25,16 @@
 1560500347 c:\newshift\finalfinalstatement\finaldbase\include\character.h
 	<Person.h>
 
-1561020447 source:c:\newshift\finalfinalstatement\finaldbase\src\dynarray.cpp
+1561021685 source:c:\newshift\finalfinalstatement\finaldbase\src\dynarray.cpp
 	"DynArray.h"
 	<iostream>
 	"DynArray.h"
 
 1561020385 c:\newshift\finalfinalstatement\finaldbase\include\dynarray.h
+
+1561022316 source:c:\newshift\finalfinalstatement\finaldbase\src\commentator.cpp
+	"Commentator.h"
+
+1561022527 c:\newshift\finalfinalstatement\finaldbase\include\commentator.h
+	<Person.h>
 
