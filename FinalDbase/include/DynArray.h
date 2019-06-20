@@ -23,7 +23,7 @@ class arr
     private:
         T**dat;
         int siz;
-        re_siz(int new_siz){
+        void re_siz(int new_siz){
             T **e_dat = new T* [new_siz];
             int min_siz=(new_siz > siz)?siz:new_siz;
             for(int i=0;i<min_siz;i++){

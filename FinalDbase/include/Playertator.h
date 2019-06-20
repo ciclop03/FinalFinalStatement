@@ -1,8 +1,10 @@
+/**
+
 #ifndef PLAYERTATOR_H
 #define PLAYERTATOR_H
 
 #include <Player.h>
-
+#include <Commentator.h>
 
 class Playertator : public Player, public Commentator
 {
@@ -16,3 +18,4 @@ class Playertator : public Player, public Commentator
 };
 
 #endif // PLAYERTATOR_H
+**/

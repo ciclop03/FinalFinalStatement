@@ -12,6 +12,8 @@ class Player : virtual public Person
         //:Person(name,lastname,country, gender,age){};
         virtual ~Player();
 
+
+
     protected:
         std::string nick;
         int wins, looses, top8s, cpt_points;

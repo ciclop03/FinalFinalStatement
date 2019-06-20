@@ -17,7 +17,7 @@ Person::Person()
             name = "N/A";
             lastname= "N/A";
             country = "N/A";
-            gender='m';
+            gender='m';//m or f
             age=-1;
 }
 

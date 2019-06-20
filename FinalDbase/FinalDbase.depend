@@ -1,8 +1,14 @@
 # depslib dependency file v1.0
-1514140574 source:c:\newshift\finalfinalstatement\finaldbase\main.cpp
+1561025616 source:c:\newshift\finalfinalstatement\finaldbase\main.cpp
 	<iostream>
+	<fstream>
+	<stdlib.h>
+	<Player.h>
+	<Character.h>
+	<Commentator.h>
+	<DynArray.h>
 
-1561020771 source:c:\newshift\finalfinalstatement\finaldbase\src\person.cpp
+1561023744 source:c:\newshift\finalfinalstatement\finaldbase\src\person.cpp
 	"Person.h"
 	<string>
 	<iostream>
@@ -11,11 +17,11 @@
 	<string>
 	<iostream>
 
-1560946416 source:c:\newshift\finalfinalstatement\finaldbase\src\player.cpp
+1561026005 source:c:\newshift\finalfinalstatement\finaldbase\src\player.cpp
 	"Player.h"
 	<iostream>
 
-1561022528 c:\newshift\finalfinalstatement\finaldbase\include\player.h
+1561026290 c:\newshift\finalfinalstatement\finaldbase\include\player.h
 	<iostream>
 	<Person.h>
 
@@ -30,11 +36,18 @@
 	<iostream>
 	"DynArray.h"
 
-1561020385 c:\newshift\finalfinalstatement\finaldbase\include\dynarray.h
+1561026290 c:\newshift\finalfinalstatement\finaldbase\include\dynarray.h
 
 1561022316 source:c:\newshift\finalfinalstatement\finaldbase\src\commentator.cpp
 	"Commentator.h"
 
 1561022527 c:\newshift\finalfinalstatement\finaldbase\include\commentator.h
 	<Person.h>
+
+1561023786 source:c:\newshift\finalfinalstatement\finaldbase\src\playertator.cpp
+	"Playertator.h"
+
+1561023786 c:\newshift\finalfinalstatement\finaldbase\include\playertator.h
+	<Player.h>
+	<Commentator.h>
 
