@@ -1,23 +1,32 @@
 #ifndef DYNARRAY_H
 #define DYNARRAY_H
 /// USAR INLINE CON TEMPLATES (?)
-
+#include<Player.h>
 
 template <typename T>
-class arr
+class DynArray
 {
     public:
-        arr(){
+        DynArray(){
             siz=0;
 
         };
 
-        virtual ~arr();
+        virtual ~DynArray();
         sor_qck();
         sor_cou();
         ins_end(T a);
         ins(T a, int pos);
         del(int pos);
+
+        ///funciones
+        ///comparar jugador con jugador
+        void ply_compare<Player>(Player**arr,int pos_a, int pos_b){
+            std::cout <<"fths";
+            return ;
+        }
+
+
     protected:
 
     private:

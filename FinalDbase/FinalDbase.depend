@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1561025616 source:c:\newshift\finalfinalstatement\finaldbase\main.cpp
+1561026290 source:c:\newshift\finalfinalstatement\finaldbase\main.cpp
 	<iostream>
 	<fstream>
 	<stdlib.h>
@@ -17,11 +17,11 @@
 	<string>
 	<iostream>
 
-1561026005 source:c:\newshift\finalfinalstatement\finaldbase\src\player.cpp
+1561026290 source:c:\newshift\finalfinalstatement\finaldbase\src\player.cpp
 	"Player.h"
 	<iostream>
 
-1561026290 c:\newshift\finalfinalstatement\finaldbase\include\player.h
+1561026795 c:\newshift\finalfinalstatement\finaldbase\include\player.h
 	<iostream>
 	<Person.h>
 
@@ -36,7 +36,8 @@
 	<iostream>
 	"DynArray.h"
 
-1561026290 c:\newshift\finalfinalstatement\finaldbase\include\dynarray.h
+1561027069 c:\newshift\finalfinalstatement\finaldbase\include\dynarray.h
+	<Player.h>
 
 1561022316 source:c:\newshift\finalfinalstatement\finaldbase\src\commentator.cpp
 	"Commentator.h"
