@@ -36,7 +36,7 @@
 	<iostream>
 	"DynArray.h"
 
-1561027069 c:\newshift\finalfinalstatement\finaldbase\include\dynarray.h
+1561232618 c:\newshift\finalfinalstatement\finaldbase\include\dynarray.h
 	<Player.h>
 
 1561022316 source:c:\newshift\finalfinalstatement\finaldbase\src\commentator.cpp
@@ -51,4 +51,6 @@
 1561023786 c:\newshift\finalfinalstatement\finaldbase\include\playertator.h
 	<Player.h>
 	<Commentator.h>
+
+1561232579 source:c:\newshift\finalfinalstatement\finaldbase\src\player_comm.cpp
 

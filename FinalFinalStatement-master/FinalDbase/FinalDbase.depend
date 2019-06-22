@@ -1,0 +1,107 @@
+# depslib dependency file v1.0
+1561026290 source:c:\newshift\finalfinalstatement\finaldbase\main.cpp
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<Player.h>
+	<Character.h>
+	<Commentator.h>
+	<DynArray.h>
+
+1561023744 source:c:\newshift\finalfinalstatement\finaldbase\src\person.cpp
+	"Person.h"
+	<string>
+	<iostream>
+
+1561022527 c:\newshift\finalfinalstatement\finaldbase\include\person.h
+	<string>
+	<iostream>
+
+1561026290 source:c:\newshift\finalfinalstatement\finaldbase\src\player.cpp
+	"Player.h"
+	<iostream>
+
+1561026795 c:\newshift\finalfinalstatement\finaldbase\include\player.h
+	<iostream>
+	<Person.h>
+
+1560500674 source:c:\newshift\finalfinalstatement\finaldbase\src\character.cpp
+	"Character.h"
+
+1560500347 c:\newshift\finalfinalstatement\finaldbase\include\character.h
+	<Person.h>
+
+1561021685 source:c:\newshift\finalfinalstatement\finaldbase\src\dynarray.cpp
+	"DynArray.h"
+	<iostream>
+	"DynArray.h"
+
+1561027069 c:\newshift\finalfinalstatement\finaldbase\include\dynarray.h
+	<Player.h>
+
+1561022316 source:c:\newshift\finalfinalstatement\finaldbase\src\commentator.cpp
+	"Commentator.h"
+
+1561022527 c:\newshift\finalfinalstatement\finaldbase\include\commentator.h
+	<Person.h>
+
+1561023786 source:c:\newshift\finalfinalstatement\finaldbase\src\playertator.cpp
+	"Playertator.h"
+
+1561023786 c:\newshift\finalfinalstatement\finaldbase\include\playertator.h
+	<Player.h>
+	<Commentator.h>
+
+1561098796 source:c:\newshift\finalfinalstatement\finalfinalstatement-master\finaldbase\main.cpp
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<Player.h>
+	<Character.h>
+	<Commentator.h>
+	<DynArray.h>
+
+1561098796 c:\newshift\finalfinalstatement\finalfinalstatement-master\finaldbase\include\player.h
+	<iostream>
+	<Person.h>
+
+1561098796 c:\newshift\finalfinalstatement\finalfinalstatement-master\finaldbase\include\person.h
+	<string>
+	<iostream>
+
+1561098796 c:\newshift\finalfinalstatement\finalfinalstatement-master\finaldbase\include\character.h
+	<Person.h>
+
+1561098796 c:\newshift\finalfinalstatement\finalfinalstatement-master\finaldbase\include\commentator.h
+	<Person.h>
+
+1561098796 c:\newshift\finalfinalstatement\finalfinalstatement-master\finaldbase\include\dynarray.h
+	<Player.h>
+
+1561098796 source:c:\newshift\finalfinalstatement\finalfinalstatement-master\finaldbase\src\character.cpp
+	"Character.h"
+
+1561098796 source:c:\newshift\finalfinalstatement\finalfinalstatement-master\finaldbase\src\commentator.cpp
+	"Commentator.h"
+
+1561098796 source:c:\newshift\finalfinalstatement\finalfinalstatement-master\finaldbase\src\dynarray.cpp
+	"DynArray.h"
+	<iostream>
+	"DynArray.h"
+
+1561098796 source:c:\newshift\finalfinalstatement\finalfinalstatement-master\finaldbase\src\person.cpp
+	"Person.h"
+	<string>
+	<iostream>
+
+1561098796 source:c:\newshift\finalfinalstatement\finalfinalstatement-master\finaldbase\src\player.cpp
+	"Player.h"
+	<iostream>
+
+1561098796 source:c:\newshift\finalfinalstatement\finalfinalstatement-master\finaldbase\src\playertator.cpp
+	"Playertator.h"
+
+1561098796 c:\newshift\finalfinalstatement\finalfinalstatement-master\finaldbase\include\playertator.h
+	<Player.h>
+	<Commentator.h>
+

@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1514140574 source:c:\newshift\finalfinalstatement\no\main.cpp
+	<iostream>
+
+1560946702 source:c:\newshift\finalfinalstatement\no\src\per.cpp
+	"per.h"
+
+1560951802 c:\newshift\finalfinalstatement\no\include\per.h
+
+1560946803 source:c:\newshift\finalfinalstatement\no\src\com.cpp
+	"com.h"
+
+1560946803 c:\newshift\finalfinalstatement\no\include\com.h
+	<per.h>
+
+1560946759 source:c:\newshift\finalfinalstatement\no\src\pla.cpp
+	"pla.h"
+
+1560946758 c:\newshift\finalfinalstatement\no\include\pla.h
+	<per.h>
+
+1560946861 source:c:\newshift\finalfinalstatement\no\src\pc.cpp
+	"pc.h"
+
+1560946861 c:\newshift\finalfinalstatement\no\include\pc.h
+
+1560947809 source:c:\newshift\finalfinalstatement\no\src\arr.cpp
+	"arr.h"
+
+1560951816 c:\newshift\finalfinalstatement\no\include\arr.h
+

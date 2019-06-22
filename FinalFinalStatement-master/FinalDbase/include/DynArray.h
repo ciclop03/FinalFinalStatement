@@ -1,6 +1,4 @@
-/**
 #ifndef DYNARRAY_H
-
 #define DYNARRAY_H
 /// USAR INLINE CON TEMPLATES (?)
 #include<Player.h>
@@ -54,4 +52,3 @@ class DynArray
 
 
 #endif // DYNARRAY_H
-*/
