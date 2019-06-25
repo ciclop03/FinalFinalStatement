@@ -6,9 +6,10 @@
 #include "person.h"
 #include "player.h"
 #include "filemanager.h"
+#include "commentator.h"
 void proofFileManager()
 {
-    FileManager *n=new FileManager("hello.txt","karin,12,12");
+   // FileManager *n=new FileManager("hello.txt","karin,12,12");
 
 }
 void proofHash()
@@ -24,8 +25,11 @@ void proofHash()
 }
 int main(int argc, char *argv[])
 {
+    Commentator *c=new Commentator();
+    Commentator *nc=new Commentator("abi","rex","usa",'m',31,0);
+    c->sortByVote();
     //proofHash();
-    proofFileManager();
+    //proofFileManager();
     /*
     QApplication a(argc, argv);
     MainWindow w;

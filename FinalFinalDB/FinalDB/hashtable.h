@@ -12,7 +12,7 @@ public:
     HashTables();
     ~HashTables();
     //operator overload for print hashTable
-
+    void insert(T &,)
     void put(T &,int &);
     void remove(int &);
     friend std::ostream & operator << (std::ostream & out,HashTables *hash)

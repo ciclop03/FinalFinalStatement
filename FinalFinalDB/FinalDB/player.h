@@ -4,7 +4,7 @@
 #include <Person.h>
 
 using namespace std;
-class Player :virtual  public Person
+class Player : public Person
 {
     friend class DynArray;
     public:

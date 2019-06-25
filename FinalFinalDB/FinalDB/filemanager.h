@@ -6,11 +6,9 @@ using namespace std;
 class FileManager
 {
 public:
-    FileManager(string fileName,string content);
-
+    FileManager();
+    void writeFile(string fileName,string con);
 private:
-    string fileName;
-    string content;
 };
 
 #endif // FILEMANAGER_H

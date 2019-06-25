@@ -3,8 +3,14 @@
 Commentator::Commentator(std::string name, std::string lastname, std::string country, char gender, int age, int votes)
                          :Person(name,lastname,country,gender,age)
 {
-    this->votes=votes;
+    string content=name+','+lastname+','+country+','+gender+','+to_string(age)+','+to_string(votes);
+    fileManager->writeFile("Commentator.txt",content);
 }
+Commentator::Commentator()
+{
+
+}
+
 Commentator::Commentator(std::string name, std::string lastname, std::string country, char gender, int age)
                         :Person(name, lastname, country, gender, age)
 {
@@ -13,4 +19,46 @@ Commentator::Commentator(std::string name, std::string lastname, std::string cou
 Commentator::~Commentator()
 {
     //dtor
+}
+
+void Commentator::sortByVote()
+{
+    string line;
+    ifstream file;
+    file.open("Commentator.txt");
+    vector<string> readline;
+    string sortedList[3];
+    if(file.is_open())
+    {
+        int i=0;
+        while (getline(file,line)) {
+            readline=split(line);
+            cout << readline[1];
+            sortedList[i]=readline[1];
+            i++;
+        }
+    }
+    file.close();
+    sort(begin(sortedList),end(sortedList));
+    for (int i=0;i<3;i++) {
+        cout << sortedList[i] << endl;
+    }
+
+
+}
+
+vector<string> Commentator::split(string str)
+{
+    vector<string> splitVector;
+    string ss;
+    for (int i=0;i< str.length();i++) {
+        if(str[i]!=',')
+            ss+=str[i];
+        if(str[i]==',' or i==str.length()-1)
+        {
+            splitVector.push_back(ss);
+            ss=' ';
+        }
+    }
+    return splitVector;
 }
