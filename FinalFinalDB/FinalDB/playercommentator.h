@@ -1,8 +1,8 @@
 #ifndef PLAYERTATOR_H
 #define PLAYERTATOR_H
 #include "person.h"
-#include <Player.h>
-#include <Commentator.h>
+#include <player.h>
+#include <commentator.h>
 
 class PlayerCommentator : public Player, public Commentator
 {

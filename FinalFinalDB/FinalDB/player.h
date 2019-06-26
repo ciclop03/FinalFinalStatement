@@ -1,8 +1,7 @@
 #ifndef PLAYER_H
 #define PLAYER_H
 #include <iostream>
-#include <Person.h>
-
+#include "person.h"
 using namespace std;
 class Player : public Person
 {

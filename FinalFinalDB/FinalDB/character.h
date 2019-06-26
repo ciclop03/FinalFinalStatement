@@ -1,7 +1,7 @@
 #ifndef CHARACTER_H
 #define CHARACTER_H
 
-#include <Person.h>
+#include "person.h"
 
 
 class Character : public Person

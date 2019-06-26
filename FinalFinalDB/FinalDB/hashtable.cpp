@@ -1,21 +1,22 @@
 #include "hashtable.h"
-using namespace std;
-template<typename T>
-HashTables<T>::HashTables()
+template<typename K, typename V>
+HashTable<K,V>::HashTable(const unsigned int &s)
+    :hashTableSize(s)
 {
-    table=new Node<T> *[HashTablesSize];
-    for (int i = 0; i < HashTablesSize; ++i) {
+    this->table=new Node<K,V> *[this->hashTableSize];
+    for (int i=0;i<this->hashTableSize;++i) {
         *(table+i)=nullptr;
     }
 }
-template<typename T>
-HashTables<T>::~HashTables()
+
+template<typename K, typename V>
+HashTable<K,V>::~HashTable()
 {
-    for (int i = 0; i < HashTablesSize; ++i) {
+    for (int i = 0; i < this->hashTableSize; ++i) {
         if(*(table+i)!=nullptr)
         {
-            Node<T> *prevEntry=nullptr;
-            Node<T> *entry=*(table+i);
+            Node<K,V> *prevEntry=nullptr;
+            Node<K,V> *entry=*(table+i);
             while (entry!=nullptr) {
                 prevEntry=entry;
                 entry=entry->getNextPtr();
@@ -26,63 +27,69 @@ HashTables<T>::~HashTables()
     }
     delete[] table;
 }
-template<typename T>
-void HashTables<T>::put(T &data, int &key)
+
+template<typename K, typename V>
+void HashTable<K,V>::insert(K &key, const V & value)
 {
-    int hash=key%HashTablesSize;
-    if(!table[hash])
+    int hash=getHash(key)%hashTableSize;//get hash for string
+    if(!table[hash])//if the table[index] is empty create new Node
     {
-        cout << "create a node" << endl;
-        table[hash]=new Node<T>(data,key);
+        table[hash]=new Node<K,V>(key,value);
         return;
     }
-    Node<T> *temPtr=table[hash];
-    while(temPtr->getNextPtr())
-    {
-        cout << "entro" << endl;
+    Node<K,V> *temPtr=this->table[hash];//else create linkedlist in table[index]
+    while (temPtr->getNextPtr()){
         temPtr=temPtr->getNextPtr();
     }
-    temPtr->setNextPtr(new Node<T>(data,key));
+    temPtr->setNextPtr(new Node<K,V>(key,value));
 }
-template <typename T>
-void HashTables<T>::remove(int & key)
+
+template<typename K, typename V>
+Node<K,V> * HashTable<K,V>::find(K &key)
 {
-    int hash=(key%HashTablesSize);
-    if(!table[hash])
-        return;
-    else
+    Node<K,V> *temPtr=this->table[this->getHash(key)%this->hashTableSize];
+    if(temPtr->getKey()!=key)
     {
-        Node<T> *temPtr=table[hash];
-        Node<T> *temPtrDelete=table[hash];
-        temPtr=temPtr->getNextPtr();
-        while(temPtr)
-        {
-            if(table[hash]->getKey()==key)
-            {
-                cout << "borrando " << temPtrDelete->getData() << "," << temPtrDelete->getKey() << endl;
-                delete temPtrDelete;
-                table[hash]=temPtr;
-                temPtr=temPtr->getNextPtr();
-                temPtrDelete=table[hash];
-
-            }
-            else
-            {
-                cout << temPtrDelete->getData() << "," << temPtrDelete->getKey() << endl;
-                if(temPtr->getKey()==key)
-                {
-                    temPtrDelete->nextPtr=temPtr->getNextPtr();
-                    delete temPtr;
-                    temPtr=temPtrDelete->getNextPtr();
-                }
-                else
-                {
-                    temPtr=temPtr->getNextPtr();
-                    temPtrDelete=temPtrDelete->getNextPtr();
-                }
-
-            }
-
+        while (temPtr->getKey()!=key) {//find key on linked list
+            temPtr=temPtr->getNextPtr();
+            if(temPtr->getNextPtr()==nullptr)
+                break;
         }
     }
+    return temPtr;
+}
+
+template<typename K, typename V>
+bool HashTable<K,V>::isInHash(K &key)
+{
+    Node<K,V> *temPtr=this->table[this->getHash(key)%this->hashTableSize];
+    if(temPtr->getKey()!=key)
+    {
+        while (temPtr->getKey()!=key) {//find key on linked list
+            temPtr=temPtr->getNextPtr();
+            if(temPtr->getNextPtr()==nullptr)
+                return false;
+        }
+    }
+    return true;
+}
+template<typename K,typename V>
+int HashTable<K,V>::getHash(K &data)//get hash for only string data
+{
+    int hash=0;
+    for (int i = 0; i < data.length(); ++i) {
+        hash=(hash<<5)-hash+int(i);
+    }
+    return hash;
+}
+
+template<typename K, typename V>
+unsigned int HashTable<K,V>::getHashTableSize() const
+{
+    return hashTableSize;
+}
+template<typename K, typename V>
+void HashTable<K,V>::setHashTableSize(unsigned int value)
+{
+    hashTableSize = value;
 }

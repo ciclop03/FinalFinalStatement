@@ -1,42 +1,105 @@
-
-
 #ifndef NODE_H
 #define NODE_H
 #include <iostream>
-template <typename T> class HashTables;
-template <typename T>
+#include <string>
+class Record
+{
+public:
+    Record(const unsigned long &s,const unsigned long &e)
+        :start(s),end(e)
+    {
+    }
+
+    unsigned long getStart() const
+    {
+        return start;
+    }
+
+    unsigned long getEnd() const
+    {
+        return end;
+    }
+    friend std::ostream & operator << (std::ostream &out,Record &r)
+    {
+        out << "start" << r.getStart() << "\n";
+        out << "end" << r.getEnd() << "\n";
+        return out;
+    }
+    friend std::ostream & operator << (std::ostream &out,Record *r)
+    {
+        out << "start" << r->getStart() << "\n";
+        out << "end" << r->getEnd() << "\n";
+        return out;
+    }
+
+    friend std::ostream & operator << (std::ostream &out,Record r)
+    {
+        out << "start" << r.getStart() << "\n";
+        out << "end" << r.getEnd() << "\n";
+        return out;
+    }
+private:
+    unsigned long start;
+    unsigned long end;
+};
+
+template <typename K,typename V> class HashTable;
+template <typename K,typename V>
 class Node
 {
-    friend class HashTables<T>;//
+    friend class HashTable<K,V>;
 public:
-    Node(T &d,int &k)//construct
-        :data(d),key(k),nextPtr(nullptr){}//initialization
-    T getData()//this function return data
+    Node(const K &k,const V &v)
+        :key(k),data(v),nextPtr(nullptr)
+    {
+    }
+    V getData() const;
+    void setData(const V &value);
+
+    K getKey() const;
+    void setKey(const K &value);
+
+    Node<K, V> *getNextPtr() const;
+    void setNextPtr(Node<K, V> *value);
+    V &getDataPtr()
     {
         return this->data;
     }
-    int getKey()
-    {
-        return this->key;
-    }
-    void setData(T & d)
-    {
-        this->data=d;
-    }
-    Node *getNextPtr()//this function return nextPtr
-    {
-        return this->nextPtr;
-    }
-    void setNextPtr(Node *ptr)
-    {
-        this->nextPtr=ptr;
-    }
-
 private:
-    T data;
-    int key;
-    Node *nextPtr;
-
+    V data;
+    K key;
+    Node<K, V> *nextPtr;
 };
+
+template<typename K,typename V>
+V Node<K,V>::getData() const
+{
+    return data;
+}
+template<typename K,typename V>
+void Node<K,V>::setData(const V &value)
+{
+    data = value;
+}
+template<typename K,typename V>
+K Node<K,V>::getKey() const
+{
+    return key;
+}
+template<typename K,typename V>
+void Node<K,V>::setKey(const K &value)
+{
+    key = value;
+}
+template<typename K,typename V>
+Node<K, V> *Node<K,V>::getNextPtr() const
+{
+    return nextPtr;
+}
+template<typename K,typename V>
+void Node<K,V>::setNextPtr(Node<K, V> *value)
+{
+    nextPtr = value;
+}
 
 #endif // NODE_H

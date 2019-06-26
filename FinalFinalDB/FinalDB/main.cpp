@@ -14,21 +14,21 @@ void proofFileManager()
 }
 void proofHash()
 {
+    int a=120;
     Player *p=new Player("a","b","usa",'m',20,"punk",180,4,6,2500);
     p->talk();
     string ss="hello";
-    int a=2;
-    HashTables<Player> *n=new HashTables<Player>;
-    n->put(*p,a);
+    HashTable<string,Player> *n=new HashTable<string,Player>(a);
+    n->insert(ss,*p);
     cout << n;
 
 }
 int main(int argc, char *argv[])
 {
-    Commentator *c=new Commentator();
-    Commentator *nc=new Commentator("abi","rex","usa",'m',31,0);
-    c->sortByVote();
-    //proofHash();
+    //Commentator *c=new Commentator();
+    //Commentator *nc=new Commentator("abi","rex","usa",'m',31,0);
+    //c->sortByVote();
+    proofHash();
     //proofFileManager();
     /*
     QApplication a(argc, argv);

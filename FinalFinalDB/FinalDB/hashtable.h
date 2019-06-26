@@ -1,43 +1,29 @@
-
-#ifndef HASHTABLES_H
-#define HASHTABLES_H
-#include <node.h>
+#ifndef HASHTABLE_H
+#define HASHTABLE_H
 #include <iostream>
-// T is NodeType
-const int HashTablesSize=128;
-template<typename T>
-class HashTables
+#include <string>
+#include "node.h"
+#include "fstream"
+using namespace  std;
+template<typename K,typename V>
+class HashTable
 {
 public:
-    HashTables();
-    ~HashTables();
-    //operator overload for print hashTable
-    void insert(T &,)
-    void put(T &,int &);
-    void remove(int &);
-    friend std::ostream & operator << (std::ostream & out,HashTables *hash)
+    HashTable(const unsigned int &);
+    ~HashTable();
+    void insert(K &,const V & );
+    Node<K,V>* find(K &);
+    bool isInHash(K &);
+    int getHash(K &);
+    unsigned int getHashTableSize() const;
+    void setHashTableSize(unsigned int value);
+    void createIndexFileFromHash();
+    void setHashFronIndexFile();
+    friend std::ostream & operator << (std::ostream &out,HashTable h)
     {
-        for (int i = 0; i < HashTablesSize; ++i) {
-            Node<T> *temPtr=hash->table[i];
-            if(temPtr)
-            {
-                out <<"[" << i << "]-->" ;
-            }
-            while(temPtr)
-            {
-                out <<"(" << temPtr->getData().getNick() << "," << temPtr->getKey() << ")-->";
-                temPtr=temPtr->getNextPtr();
-            }
-
-            if(hash->table[i])
-                out << '\n';
-        }
-        return out;
     }
-
 private:
-    Node<T> **table;
-
+    unsigned int hashTableSize;
+    Node<K,V> **table;
 };
-
-#endif // HASHTABLES_H
+#endif // HASHTABLE_H

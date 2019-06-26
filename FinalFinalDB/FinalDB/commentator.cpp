@@ -1,4 +1,4 @@
-#include "Commentator.h"
+#include "commentator.h"
 
 Commentator::Commentator(std::string name, std::string lastname, std::string country, char gender, int age, int votes)
                          :Person(name,lastname,country,gender,age)
@@ -39,6 +39,7 @@ void Commentator::sortByVote()
         }
     }
     file.close();
+    cout << endl;
     sort(begin(sortedList),end(sortedList));
     for (int i=0;i<3;i++) {
         cout << sortedList[i] << endl;

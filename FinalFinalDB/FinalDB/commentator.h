@@ -1,7 +1,7 @@
 #ifndef COMMENTATOR_H
 #define COMMENTATOR_H
 #include <algorithm>
-#include <Person.h>
+#include <person.h>
 #include <fstream>
 #include <iostream>
 #include <vector>
