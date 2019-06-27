@@ -7,21 +7,19 @@ class Player : public Person
 {
     friend class DynArray;
     public:
+        Player();
         Player(std::string name, std::string lastname, std::string country, char gender, int age,
                std::string nick, int wins, int looses,int top8s, int cpt_points);
         //:Person(name,lastname,country, gender,age){};
         void talk()
         {
-            cout <<this->name << endl;
+            cout <<"i am player"<< endl;
         }
         virtual ~Player();
-
-
-
         std::string getNick() const;
         void setNick(const std::string &value);
 
-protected:
+    protected:
         std::string nick;
         int wins, looses, top8s, cpt_points;
 

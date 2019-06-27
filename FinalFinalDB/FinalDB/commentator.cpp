@@ -4,7 +4,7 @@ Commentator::Commentator(std::string name, std::string lastname, std::string cou
                          :Person(name,lastname,country,gender,age)
 {
     string content=name+','+lastname+','+country+','+gender+','+to_string(age)+','+to_string(votes);
-    fileManager->writeFile("Commentator.txt",content);
+    writeFile("Commentator.txt",content);
 }
 Commentator::Commentator()
 {
@@ -32,7 +32,7 @@ void Commentator::sortByVote()
     {
         int i=0;
         while (getline(file,line)) {
-            readline=split(line);
+            readline=split(line,',');
             cout << readline[1];
             sortedList[i]=readline[1];
             i++;
@@ -44,22 +44,6 @@ void Commentator::sortByVote()
     for (int i=0;i<3;i++) {
         cout << sortedList[i] << endl;
     }
-
-
 }
 
-vector<string> Commentator::split(string str)
-{
-    vector<string> splitVector;
-    string ss;
-    for (int i=0;i< str.length();i++) {
-        if(str[i]!=',')
-            ss+=str[i];
-        if(str[i]==',' or i==str.length()-1)
-        {
-            splitVector.push_back(ss);
-            ss=' ';
-        }
-    }
-    return splitVector;
-}
+

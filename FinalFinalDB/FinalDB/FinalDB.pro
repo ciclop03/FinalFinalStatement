@@ -27,7 +27,9 @@ CONFIG += c++11
 SOURCES += \
         character.cpp \
         commentator.cpp \
-        filemanager.cpp \
+        databasemanagementsystem.cpp \
+        facade.cpp \
+        factory.cpp \
         hashtable.cpp \
         main.cpp \
         mainwindow.cpp \
@@ -39,11 +41,14 @@ SOURCES += \
 HEADERS += \
         character.h \
         commentator.h \
-        filemanager.h \
+        databasemanagementsystem.h \
+        facade.h \
+        factory.h \
         hashtable.h \
         mainwindow.h \
         node.h \
         person.h \
+        personfactory.h \
         player.h \
         playercommentator.h
 

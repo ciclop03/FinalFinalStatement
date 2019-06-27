@@ -22,6 +22,9 @@ public:
     friend std::ostream & operator << (std::ostream &out,HashTable h)
     {
     }
+    string getNameOfDbTable() const;
+    void setNameOfDbTable(const string &value);
+
 private:
     unsigned int hashTableSize;
     Node<K,V> **table;

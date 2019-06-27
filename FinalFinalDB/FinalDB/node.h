@@ -2,47 +2,6 @@
 #define NODE_H
 #include <iostream>
 #include <string>
-class Record
-{
-public:
-    Record(const unsigned long &s,const unsigned long &e)
-        :start(s),end(e)
-    {
-    }
-
-    unsigned long getStart() const
-    {
-        return start;
-    }
-
-    unsigned long getEnd() const
-    {
-        return end;
-    }
-    friend std::ostream & operator << (std::ostream &out,Record &r)
-    {
-        out << "start" << r.getStart() << "\n";
-        out << "end" << r.getEnd() << "\n";
-        return out;
-    }
-    friend std::ostream & operator << (std::ostream &out,Record *r)
-    {
-        out << "start" << r->getStart() << "\n";
-        out << "end" << r->getEnd() << "\n";
-        return out;
-    }
-
-    friend std::ostream & operator << (std::ostream &out,Record r)
-    {
-        out << "start" << r.getStart() << "\n";
-        out << "end" << r.getEnd() << "\n";
-        return out;
-    }
-private:
-    unsigned long start;
-    unsigned long end;
-};
-
 template <typename K,typename V> class HashTable;
 template <typename K,typename V>
 class Node

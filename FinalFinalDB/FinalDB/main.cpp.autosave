@@ -24,7 +24,7 @@ void proofFileManager()
 
 }
 
-/*void proofHash()
+void proofHash()
 {
     int a=120;
     Player *p=new Player("a","b","usa",'m',20,"punk",180,4,6,2500);
@@ -36,7 +36,7 @@ void proofFileManager()
     p=node->getData();
     cout << n;
 
-}*/
+}
 void proofbdms()
 {
     DataBaseManagementSystem *db=new DataBaseManagementSystem();
