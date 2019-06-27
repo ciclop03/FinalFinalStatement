@@ -1,0 +1,12 @@
+debug/character.o
+debug/commentator.o
+debug/databasemanagementsystem.o
+debug/facade.o
+debug/factory.o
+debug/main.o
+debug/mainwindow.o
+debug/node.o
+debug/person.o
+debug/player.o
+debug/playercommentator.o
+debug/moc_mainwindow.o
