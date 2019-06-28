@@ -13,6 +13,8 @@ class Character : public Person
                   int resistant, int attack_range, int projectile);
         ~Character();
 
+        void showdata();
+
     protected:
         ///int idcharacter;
         int damage, hit_points, defense_option, resistant, attack_range, prohectile;

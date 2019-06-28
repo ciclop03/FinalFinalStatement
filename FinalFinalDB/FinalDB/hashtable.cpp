@@ -1,5 +1,7 @@
 #include "hashtable.h"
+/*
 template<typename K, typename V>
+
 HashTable<K,V>::HashTable(const unsigned int &s)
     :hashTableSize(s)
 {
@@ -12,6 +14,7 @@ HashTable<K,V>::HashTable(const unsigned int &s)
 template<typename K, typename V>
 HashTable<K,V>::~HashTable()
 {
+
     for (int i = 0; i < this->hashTableSize; ++i) {
         if(*(table+i)!=nullptr)
         {
@@ -27,6 +30,8 @@ HashTable<K,V>::~HashTable()
     }
     delete[] table;
 }
+
+
 
 template<typename K, typename V>
 void HashTable<K,V>::insert(K &key, const V & value)
@@ -93,3 +98,4 @@ void HashTable<K,V>::setHashTableSize(unsigned int value)
 {
     hashTableSize = value;
 }
+*/

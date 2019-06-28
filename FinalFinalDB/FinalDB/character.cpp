@@ -13,5 +13,13 @@ Character::Character(std::string name, std::string lastname, std::string country
 
 Character::~Character()
 {
-    //dtor
+
+}
+
+void Character::showdata()
+{
+    std::cout<<"Character.\n Name: "<<this->name
+              <<"Damage (1-10)"<<this-damage
+              <<"Attack range(1-10) : " << this->attack_range
+              <<" ";
 }
