@@ -6,6 +6,7 @@
 #include <string>
 #include <cstring>
 #include "player.h"
+#include "character.h"
 using namespace std;
 class Factory:public PersonFactory
 {

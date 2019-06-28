@@ -9,6 +9,7 @@ class Person
         Person();
         virtual void showdata()=0;
         virtual ~Person();
+        static Person makeperson(int choice)
 
     protected:
         std::string name, lastname,country, gender;

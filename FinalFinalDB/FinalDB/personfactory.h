@@ -8,6 +8,6 @@ class PersonFactory
 {
 public:
     virtual Person *createPerson(const char *)=0;
+    virtual ~PersonFactory(){}
 };
-
 #endif // PERSONFACTORY_H

@@ -8,7 +8,7 @@
 #include "factory.h"
 
 #include "databasemanagementsystem.h"
-void proofFactory()
+void testFactory()
 {
     PersonFactory *personFactory;
     Person *person;
@@ -18,6 +18,7 @@ void proofFactory()
     person=personFactory->createPerson("Commentator");
     person->showdata();
 }
+/*
 
 void proofFileManager()
 {
@@ -41,9 +42,10 @@ void proofHash()
 void proofbdms()
 {
     DataBaseManagementSystem *db=new DataBaseManagementSystem();
-}
+}*/
 int main(int argc, char *argv[])
 {
+    /*
     proofHash();
 
     //Commentator *c=new Commentator();
@@ -55,9 +57,11 @@ int main(int argc, char *argv[])
     QApplication a(argc, argv);
     MainWindow w;
     w.show();
-    return a.exec();*/
-
+    return a.exec();
     Player playerArray= new Player[60];
+*/
+    Player arr_[50] ;
+    PersonFactory *personfactory;
 
 
 
