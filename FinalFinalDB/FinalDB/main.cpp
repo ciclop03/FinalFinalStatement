@@ -6,7 +6,7 @@
 #include "commentator.h"
 #include "personfactory.h"
 #include "factory.h"
-
+#include "playerdynarray.h"
 #include "databasemanagementsystem.h"
 void testFactory()
 {
@@ -61,7 +61,12 @@ int main(int argc, char *argv[])
     Player playerArray= new Player[60];
 */
     Player arr_[50] ;
+    int sizeofPlayer=50;
+    Perso
     PersonFactory *personfactory;
+    for (int i=0;i<;) {
+
+    }
 
 
 

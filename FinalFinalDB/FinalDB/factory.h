@@ -8,6 +8,7 @@
 #include "player.h"
 #include "character.h"
 using namespace std;
+/// fabrica concreta
 class Factory:public PersonFactory
 {
 public:

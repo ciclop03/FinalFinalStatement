@@ -3,7 +3,7 @@
 #include "person.h"
 #include "commentator.h"
 #include "player.h"
-
+/// interfa (clase abstrcata)
 class PersonFactory
 {
 public:

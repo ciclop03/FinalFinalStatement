@@ -8,6 +8,7 @@ class Character : public Person
 {
     public:
         ///los valores propios del personaje son 11 posibles del 1 al 10
+        Character ();
         Character(std::string name, std::string lastname, std::string country, std::string gender, int age,
                   /**int idcharacter,*/int damage, int hit_points, int defense_option,
                   int resistant, int attack_range, int projectile);
@@ -17,7 +18,7 @@ class Character : public Person
 
     protected:
         ///int idcharacter;
-        int damage, hit_points, defense_option, resistant, attack_range, prohectile;
+        int damage, hit_points, defense_option, resistant, attack_range, projectile;
 
     private:
 };

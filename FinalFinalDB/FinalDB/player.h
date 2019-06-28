@@ -2,10 +2,11 @@
 #define PLAYER_H
 #include <iostream>
 #include "person.h"
+#include "dynarray.h"
 using namespace std;
 class Player : public Person
 {
-    friend class PersonDynArray;
+    //friend class PersonDynArray;
     public:
        Player();
        Player(std::string name, std::string lastname, std::string country, std::string gender, int age,
