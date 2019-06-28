@@ -6,7 +6,7 @@
 #include "commentator.h"
 #include "personfactory.h"
 #include "factory.h"
-#include "hash.cpp"
+
 #include "databasemanagementsystem.h"
 void proofFactory()
 {
@@ -24,19 +24,19 @@ void proofFileManager()
 
 }
 
-/*void proofHash()
+void proofHash()
 {
     int a=120;
-    Player *p=new Player("a","b","usa",'m',20,"punk",180,4,6,2500);
+    Player *p=new Player("a","b","usa","m",20,"punk",180,4,6,2500);
     p->talk();
     string ss="hello";
     HashTable<string,Player> *n=new HashTable<string,Player>(a);
     n->insert(ss,*p);
-    Node<string,player> *node=n->find(ss);
-    p=node->getData();
+    Node<string,Player> *node=n->find(ss);
+   // p=node->getData();
     cout << n;
 
-}*/
+}
 void proofbdms()
 {
     DataBaseManagementSystem *db=new DataBaseManagementSystem();

@@ -5,14 +5,13 @@
 class Person
 {
     public:
-        Person(std::string name, std::string lastname,std::string country, char gender, int age);
+        Person(std::string name, std::string lastname,std::string country, std::string gender, int age);
         Person();
         virtual void talk()=0;
         virtual ~Person();
 
     protected:
-        std::string name, lastname,country;
-        char gender;
+        std::string name, lastname,country, gender;
         int age;
     private:
 

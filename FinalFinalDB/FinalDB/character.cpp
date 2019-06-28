@@ -1,5 +1,5 @@
 #include "character.h"
-Character::Character(std::string name, std::string lastname, std::string country, char gender, int age,
+Character::Character(std::string name, std::string lastname, std::string country, std::string gender, int age,
                   /**int idcharacter,*/int damage, int hit_points, int defense_option,
                   int resistant, int attack_range, int projectile):Person(name, lastname, country, gender, age)
 {

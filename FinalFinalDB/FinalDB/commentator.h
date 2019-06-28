@@ -10,8 +10,8 @@ class Commentator : public Person
 {
     public:
         Commentator();
-        Commentator(std::string name, std::string lastname, std::string country, char gender, int age);///ctruct vacio
-        Commentator(std::string name, std::string lastname, std::string country, char gender, int age,int votes);
+        Commentator(std::string name, std::string lastname, std::string country, std::string gender, int age);///ctruct vacio
+        Commentator(std::string name, std::string lastname, std::string country, std::string gender, int age,int votes);
         ~Commentator();
         void sortByVote();
 

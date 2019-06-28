@@ -7,7 +7,7 @@
 class PlayerCommentator : public Player, public Commentator
 {
     public:
-        PlayerCommentator(std::string name, std::string lastname, std::string country, char gender, int age,
+        PlayerCommentator(std::string name, std::string lastname, std::string country, std::string gender, int age,
                           std::string nick, int wins, int looses,int top8s, int cpt_points, int votes);
         ~PlayerCommentator();
 
