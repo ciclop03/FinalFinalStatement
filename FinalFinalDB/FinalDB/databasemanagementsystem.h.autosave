@@ -48,6 +48,7 @@ public:
     void inserPlayertIntoVector(vector<T> vec, T ob){
             T temp = ob;
             vec.push_back(temp);
+            ///sort
     }
 
     void insertIntoTxt(T ob){

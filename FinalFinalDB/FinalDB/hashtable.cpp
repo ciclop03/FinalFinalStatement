@@ -1,5 +1,5 @@
 #include "hashtable.h"
-/*
+
 template<typename K, typename V>
 
 HashTable<K,V>::HashTable(const unsigned int &s)
@@ -98,4 +98,4 @@ void HashTable<K,V>::setHashTableSize(unsigned int value)
 {
     hashTableSize = value;
 }
-*/
+

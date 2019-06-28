@@ -15,6 +15,7 @@ class Character : public Person
         ~Character();
 
         void showdata();
+        int overallTier();
 
     protected:
         ///int idcharacter;

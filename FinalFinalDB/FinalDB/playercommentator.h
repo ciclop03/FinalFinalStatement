@@ -4,7 +4,7 @@
 #include <player.h>
 #include <commentator.h>
 
-class PlayerCommentator : public T, public Commentator
+class PlayerCommentator : public Player, public Commentator
 {
     public:
         PlayerCommentator(std::string name, std::string lastname, std::string country, std::string gender, int age,

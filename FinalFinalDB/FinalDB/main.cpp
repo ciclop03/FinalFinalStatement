@@ -54,7 +54,7 @@ int main(int argc, char *argv[])
     //c->sortByVote();
     //proofHash();
     //proofFileManager();
-    /*
+
     QApplication a(argc, argv);
     MainWindow w;
     w.show();
@@ -62,13 +62,23 @@ int main(int argc, char *argv[])
     Player playerArray= new Player[60];
 */
     Player arr_[50] ;
-    int arr_size=50;
-    PersonDynArray<Player>(arr_,arr_size);
+    int arr_size_=50;
+    PersonDynArray<Player>l(arr_,arr_size_);
+
+    /*
     PersonFactory *personfactory;
 
-    for (int i=0;i<;) {
+    for (int i=0;i<arr_size_;i++) {
+        PersonFactory *personFactory;
+        Person *person;
+        personFactory=new Factory;
+        person=personFactory->createPerson("Player");
+        l_[i]=&person;
 
-    }
+    }*/
+
+
+
 
 
 

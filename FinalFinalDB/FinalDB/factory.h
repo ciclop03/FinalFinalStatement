@@ -12,7 +12,7 @@ using namespace std;
 class Factory:public PersonFactory
 {
 public:
-     static Person *createPerson(const  char *type);
+     Person *createPerson(const  char *type);
 
 };
 

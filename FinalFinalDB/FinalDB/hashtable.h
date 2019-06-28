@@ -9,7 +9,7 @@ template<typename K,typename V>
 class HashTable
 {
 public:
-    HashTable(/*const unsigned int &*/){
+   /* HashTable(const unsigned int &){
         ///set initial values:
         hashTableSize =60;
         sizee=0;///at the beginning has nothing
@@ -22,7 +22,8 @@ public:
         /// Phantom node with key -1
 
 
-    }
+    }*/
+    HashTable(const unsigned int &);
     ~HashTable();
     void insert(K &,const V & );
     Node<K,V>* find(K &);
@@ -44,11 +45,12 @@ private:
     unsigned int hashTableSize;
     ///Es un arreglo de nodos (que a la vez es un arreglo)
     Node<K,V> **table;
+    /*
     /// tamaño actual de hash *NEW*
     int sizee;
     /// nodo fntasma(?) *NEW*
     Node<K,V> **pnode;
-
+*/
 
 };
 #endif // HASHTABLE_H
