@@ -7,7 +7,7 @@ class Person
     public:
         Person(std::string name, std::string lastname,std::string country, std::string gender, int age);
         Person();
-        virtual void talk()=0;
+        virtual void showdata()=0;
         virtual ~Person();
 
     protected:

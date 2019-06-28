@@ -2,7 +2,7 @@
 
 DataBaseManagementSystem::DataBaseManagementSystem()
 {
-    hashPlayer=new HashTable<string,Player>(120);
+    hashPlayer=new HashTable<string,T>(120);
 }
 /// AQUI....
 void DataBaseManagementSystem::loadPlayerIntoHash()
@@ -22,7 +22,7 @@ void DataBaseManagementSystem::loadPlayerIntoHash()
             int x = std::stoi(readline[8]);
             int y = std::stoi(readline[9]);
 
-            Player *p=new Player(readline[0],readline[1],readline[2],readline[3],n,readline[5],u,v,x,y);
+            T *p=new T(readline[0],readline[1],readline[2],readline[3],n,readline[5],u,v,x,y);
         }
     }
     file.close();

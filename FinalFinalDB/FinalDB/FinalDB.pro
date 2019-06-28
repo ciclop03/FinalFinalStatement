@@ -37,7 +37,8 @@ SOURCES += \
         node.cpp \
         person.cpp \
         player.cpp \
-        playercommentator.cpp
+        playercommentator.cpp \
+        playerdynarray.cpp
 
 HEADERS += \
         character.h \
@@ -53,7 +54,8 @@ HEADERS += \
         person.h \
         personfactory.h \
         player.h \
-        playercommentator.h
+        playercommentator.h \
+        playerdynarray.h
 
 FORMS += \
         mainwindow.ui

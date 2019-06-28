@@ -19,7 +19,9 @@ class Commentator : public Person
            // cout << "compare(" << a << "," << b << ")" << endl;
             return (a.compare(b) < 0);
         }
-
+        void showdata(){
+            cout<<"hola;";
+        }
         void talk()
         {
             cout << "i am commentator";

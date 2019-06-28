@@ -1,6 +1,7 @@
 release/character.o
 release/commentator.o
 release/databasemanagementsystem.o
+release/dynarray.o
 release/facade.o
 release/factory.o
 release/main.o
@@ -9,4 +10,5 @@ release/node.o
 release/person.o
 release/player.o
 release/playercommentator.o
+release/playerdynarray.o
 release/moc_mainwindow.o

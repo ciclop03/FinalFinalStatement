@@ -38,7 +38,7 @@ private:
         }
         return splitVector;
     }
-    HashTable<string,Player> *hashPlayer;
+    HashTable<string,T> *hashPlayer;
 };
 
 #endif // DATABASEMANAGEMENTSYSTEM_H

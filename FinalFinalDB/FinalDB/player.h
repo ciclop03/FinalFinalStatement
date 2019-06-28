@@ -5,10 +5,10 @@
 using namespace std;
 class Player : public Person
 {
-    friend class DynArray;
+    friend class PersonDynArray;
     public:
-        Player();
-        Player(std::string name, std::string lastname, std::string country, std::string gender, int age,
+       Player();
+       Player(std::string name, std::string lastname, std::string country, std::string gender, int age,
                std::string nick, int wins, int looses,int top8s, int cpt_points);
         //:Person(name,lastname,country, gender,age){};
         void talk()

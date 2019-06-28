@@ -4,10 +4,10 @@
 #include "player.h"
 #include "character.h"
 #include "commentator.h"
-/*
-ostream& operator<<(ostream & o, const Player& p){
-    return o<<p.PlayerData()
+
+ostream& operator<<(ostream & o, const T& p){
+    return o<<p.getNick();
 }
-*/
+
 
 #endif // FN_H

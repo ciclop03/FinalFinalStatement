@@ -14,10 +14,11 @@ void proofFactory()
     Person *person;
     personFactory=new Factory;
     person=personFactory->createPerson("Player");
-    person->talk();
+    person->showdata();
     person=personFactory->createPerson("Commentator");
-    person->talk();
+    person->showdata();
 }
+
 void proofFileManager()
 {
    // FileManager *n=new FileManager("hello.txt","karin,12,12");
@@ -27,12 +28,12 @@ void proofFileManager()
 void proofHash()
 {
     int a=120;
-    Player *p=new Player("a","b","usa","m",20,"punk",180,4,6,2500);
+    T *p=new T("a","b","usa","m",20,"punk",180,4,6,2500);
     p->showdata();
     string ss="hello";
-    HashTable<string,Player> *n=new HashTable<string,Player>(a);
+    HashTable<string,T> *n=new HashTable<string,T>(a);
     n->insert(ss,*p);
-    Node<string,Player> *node=n->find(ss);
+    Node<string,T> *node=n->find(ss);
     //p=node->getData();
     cout << n;
 
@@ -55,5 +56,11 @@ int main(int argc, char *argv[])
     MainWindow w;
     w.show();
     return a.exec();*/
+
+    Player playerArray= new Player[60];
+
+
+
+
 
 }
