@@ -1,7 +1,6 @@
 release/character.o
 release/commentator.o
 release/databasemanagementsystem.o
-release/dynarray.o
 release/facade.o
 release/factory.o
 release/main.o

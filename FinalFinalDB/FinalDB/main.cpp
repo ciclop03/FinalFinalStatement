@@ -8,6 +8,7 @@
 #include "factory.h"
 #include "playerdynarray.h"
 #include "databasemanagementsystem.h"
+
 void testFactory()
 {
     PersonFactory *personFactory;
@@ -61,9 +62,10 @@ int main(int argc, char *argv[])
     Player playerArray= new Player[60];
 */
     Player arr_[50] ;
-    int sizeofPlayer=50;
-    Perso
+    int arr_size=50;
+    PersonDynArray<Player>(arr_,arr_size);
     PersonFactory *personfactory;
+
     for (int i=0;i<;) {
 
     }

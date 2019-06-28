@@ -25,3 +25,8 @@ Person::~Person()
 {
     //dtor
 }
+
+Person Person::makeperson(int choice)
+{
+
+}

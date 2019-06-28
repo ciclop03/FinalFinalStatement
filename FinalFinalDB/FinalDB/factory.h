@@ -12,7 +12,8 @@ using namespace std;
 class Factory:public PersonFactory
 {
 public:
-    Person *createPerson(const  char *type);
+     static Person *createPerson(const  char *type);
+
 };
 
 #endif // FACTORY_H

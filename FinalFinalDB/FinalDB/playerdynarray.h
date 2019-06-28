@@ -7,7 +7,7 @@
 
 using namespace std;
 template <typename T>
-class PersonDynArray : public DynArray{
+class PersonDynArray {
     T *data;
     int size_;
 

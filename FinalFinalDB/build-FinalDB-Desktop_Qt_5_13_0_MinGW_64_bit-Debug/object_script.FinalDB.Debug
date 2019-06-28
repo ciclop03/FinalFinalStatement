@@ -1,7 +1,6 @@
 debug/character.o
 debug/commentator.o
 debug/databasemanagementsystem.o
-debug/dynarray.o
 debug/facade.o
 debug/factory.o
 debug/main.o

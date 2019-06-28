@@ -28,7 +28,6 @@ SOURCES += \
         character.cpp \
         commentator.cpp \
         databasemanagementsystem.cpp \
-        dynarray.cpp \
         facade.cpp \
         factory.cpp \
         hashtable.cpp \
@@ -44,7 +43,6 @@ HEADERS += \
         character.h \
         commentator.h \
         databasemanagementsystem.h \
-        dynarray.h \
         facade.h \
         factory.h \
         fn.h \
