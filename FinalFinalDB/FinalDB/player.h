@@ -15,6 +15,7 @@ class Player : public Person
         {
             cout <<"i am player"<< endl;
         }
+        void showdata();
         virtual ~Player();
         std::string getNick() const;
         void setNick(const std::string &value);

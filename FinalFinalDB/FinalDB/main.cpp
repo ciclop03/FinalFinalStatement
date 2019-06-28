@@ -28,12 +28,12 @@ void proofHash()
 {
     int a=120;
     Player *p=new Player("a","b","usa","m",20,"punk",180,4,6,2500);
-    p->talk();
+    p->showdata();
     string ss="hello";
     HashTable<string,Player> *n=new HashTable<string,Player>(a);
     n->insert(ss,*p);
     Node<string,Player> *node=n->find(ss);
-   // p=node->getData();
+    //p=node->getData();
     cout << n;
 
 }
@@ -44,7 +44,7 @@ void proofbdms()
 int main(int argc, char *argv[])
 {
     proofHash();
-    //proofbdms();
+
     //Commentator *c=new Commentator();
     //Commentator *nc=new Commentator("abi","rex","usa",'m',31,0);
     //c->sortByVote();

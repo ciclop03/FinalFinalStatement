@@ -15,6 +15,15 @@ Player::Player(std::string name, std::string lastname, std::string country, std:
 
 }
 
+void Player::showdata()
+{
+    cout<< "Player: "<< this->name<< " \""<< this->nick<<"\" "<<this->lastname<<"."
+        <<"\nTournament Points (CPT Points): "<<this->cpt_points<<"."
+        <<"\n"<<this->nick<<" has top eight "<<this->top8s<<" times.\n"
+        <<"Total wins (smash.gg) : "<<this->wins<< " out of "<<(this->looses/2 )+ this->wins<<" tournaments."
+        <<"(approximately "<<this->looses+(this->wins/2)<<" looses)\n";
+}
+
 
 
 Player::~Player()
